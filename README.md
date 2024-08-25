@@ -63,75 +63,75 @@ The script will display the generated image with persona text and save it as per
 ### fetch_reddit_data(subreddit_name, keyword, limit=10)
 Fetches Reddit posts from a specified subreddit containing a keyword.
 
- Parameters:
+-Parameters:
 
 subreddit_name (str): The name of the subreddit to search.
 keyword (str): The keyword to search for in the subreddit posts.
 limit (int): The maximum number of posts to fetch. Defaults to 10.
-Returns:
+- Returns:
 
 reddit_data (str): A string containing titles and content of the fetched Reddit posts.
-Usage:
+- Usage:
 
 reddit_data = await fetch_reddit_data("ecommerce", "customer experience", limit=10)
 ### refine_text_with_gpt2(text)
 Uses GPT-2 to refine and enhance the extracted text.
 
-Parameters:
+- Parameters:
 
 text (str): The text to be refined and enhanced.
-Returns:
+- Returns:
 
 refined_text (str): The GPT-2 refined version of the input text.
-Usage:
+- Usage:
 
 refined_text = refine_text_with_gpt2("Sample text to refine.")
 extract_and_refine_insights(reddit_data)
 Processes Reddit data to extract demographics, emotions, and ratings, then refines this information.
 
-Parameters:
+- Parameters:
 
 reddit_data (str): The raw Reddit data to process.
-Returns:
+- Returns:
 
 refined_demographics (str): Refined text related to demographics.
 refined_emotions (str): Refined text related to emotions.
 refined_ratings (str): Refined text related to ratings.
-Usage:
+- Usage:
 
 demographics, emotions, ratings = await extract_and_refine_insights(reddit_data)
 generate_persona_text()
 Fetches Reddit data, processes it, and formats the user persona text.
 
-Returns:
+- Returns:
 
 persona_text (str): Formatted text containing user persona details including basic information, demographics, emotions, and ratings.
-Usage:
+- Usage:
 
 persona_text = await generate_persona_text()
 create_persona_image(text_prompt)
 ### Generates an image based on a text prompt using Stable Diffusion.
 
-Parameters:
+- Parameters:
 
 text_prompt (str): The text prompt to generate the image.
-Returns:
+- Returns:
 
 image_cv2 (numpy.ndarray): The generated image in OpenCV format.
-Usage:
+- Usage:
 
 image = create_persona_image("A young Chinese male with a clear, detailed, and beautiful face.")
 create_canvas_with_text(image, persona_text)
 ### Creates a canvas, places the generated image, overlays random shapes, and adds persona text.
 
-Parameters:
+- Parameters:
 
 image (numpy.ndarray): The image to place on the canvas.
 persona_text (str): The text to overlay on the canvas.
 Returns:
 
 canvas (numpy.ndarray): The final canvas with the image, shapes, and text.
-Usage:
+- Usage:
 
 canvas_with_text = create_canvas_with_text(image, persona_text
 
