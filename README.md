@@ -1,5 +1,6 @@
 # Reddit Persona Generator
 The Reddit Persona Generator is a Python script that combines Reddit data, sentiment analysis, and Stable Diffusion to create a personalized user persona image. This project fetches Reddit posts, processes the data to extract demographics, emotions, and opinions, and then generates an image with the persona details overlayed.
+![Alt text](user3.png)
 
 ## Installation
 ## Clone the Repository:
