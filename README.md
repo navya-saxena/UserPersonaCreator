@@ -147,5 +147,4 @@ This project is licensed under the MIT License. See the LICENSE file for details
 - PRAW for Reddit API interaction.
 - Transformers for sentiment analysis.
 - OpenCV for image processing.
-## Vishesh Bhardwaj signing off. 
-- Matplotlib for displaying images.
+
